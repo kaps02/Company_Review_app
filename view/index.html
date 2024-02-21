@@ -1,0 +1,40 @@
+
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Form</title>
+</head>
+<body>
+  <h1>Review Form</h1>
+  <form id="reviewForm">
+    <label for="companyName">Company Name:</label><br>
+    <input type="text" id="companyName" name="companyName"><br>
+    <label for="pros">Pros:</label><br>
+    <textarea id="pros" name="pros"></textarea><br>
+    <label for="cons">Cons:</label><br>
+    <textarea id="cons" name="cons"></textarea><br>
+    <label for="rating">Rating:</label><br>
+    <input type="number" id="rating" name="rating" min="1" max="5"><br><br>
+    <button type="submit">Submit</button>
+  </form>
+
+<br/>
+   <!-- Search Bar -->
+   <div>
+    <label for="searchCompany"><strong>Search Company:</strong></label>
+    <input type="text" id="searchCompany" name="searchCompany">
+    <button id="searchButton">Search</button>
+  </div>
+
+  <!-- Display Area for Reviews -->
+  <div id="reviewDisplay">
+    <h2>Reviews:</h2>
+    <ul id="reviewList"></ul>
+    <p id="averageRating"></p>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
